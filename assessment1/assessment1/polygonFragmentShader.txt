@@ -1,0 +1,12 @@
+#version 330 core 
+//fragment shader must pass 1 vec4 OUT to next part of pipeline
+//to describe colour
+out vec4 FragColor;
+
+//get colour passed from vertex shader to work with 
+in vec4 ourColour;
+
+void main()
+{
+	FragColor = ourColour;
+}
