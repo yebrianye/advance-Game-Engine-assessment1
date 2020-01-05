@@ -15,6 +15,6 @@ void main()
 {
 	//0.2 means 20% of texture2 and 80% of texture1
 	//FragColor = mix(texture(texture1,texCoord),texture(texture2,texCoord),0.8) * vertexColour;
-	FragColor = texture(texture1,texCoord)* vertexColour;
+	FragColor = texture(texture1,texCoord);//* vertexColour;
 
 }

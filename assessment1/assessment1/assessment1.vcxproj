@@ -70,8 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\30959\Documents\term6\assessment1\glad + glfw\glad\include;C:\Users\30959\Documents\term6\assessment1\glad + glfw\glfw\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\30959\Documents\term6\assessment1\glad + glfw\glfw\lib-vc2015;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\30959\Documents\term6\glad + glfw\glad\include;C:\Users\30959\Documents\term6\glad + glfw\glfw\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\30959\Documents\term6\glad + glfw\glfw\lib-vc2015;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

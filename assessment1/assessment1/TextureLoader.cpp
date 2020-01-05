@@ -24,7 +24,7 @@ unsigned int loadTexture(const char * fileName, int RGBType)
 		cout << "picture loaded fine!" << endl;
 		//let pass image data to the texture in the gfx card
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, RGBType, GL_UNSIGNED_BYTE, image1Data);
-
+		 
 		//generate mipmaps :D
 		glGenerateMipmap(GL_TEXTURE_2D);
 	}

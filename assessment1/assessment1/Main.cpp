@@ -151,18 +151,18 @@ void main() {
 	glDeleteShader(fragmentShaderID);
 
 	Shader rectShaderProgram1("textureVertexShader1.txt", "textureFragmentShader2.txt");
-	Shader rectShaderProgram2("polygonVertexShader.txt", "polygonFragmentShader.txt");
-	Shader polygonShaderProgram3("polygonVertexShader.txt", "polygonFragmentShader.txt");
-	Shader triangleShaderProgram1("textureVertexShader1.txt", "textureFragmentShader2.txt");
+	//Shader rectShaderProgram2("polygonVertexShader.txt", "polygonFragmentShader.txt");
+	//Shader polygonShaderProgram3("polygonVertexShader.txt", "polygonFragmentShader.txt");
+	Shader triangleShaderProgram1("textureVertexShader1.txt", "textureFragmentShader1.txt");
 
 
 	
 	//build polygon
 	Poly poly;
-	poly.shader = &polygonShaderProgram3;
+	//poly.shader = &polygonShaderProgram3;
 
 	Rect rect;
-	rect.shader = &rectShaderProgram2;
+	//rect.shader = &rectShaderProgram2;
 
 	Triangles triangle;
 	triangle.shader = &triangleShaderProgram1;
@@ -190,7 +190,7 @@ void main() {
 		}
 
 		if (currentShapeToDraw == 3) {
-			rectShaderProgram1.use();
+			triangleShaderProgram1.use();
 			poly.draw();
 			
 		}
